@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vehicle and Fleet Management System - Python portfolio project by Stanly Philip.">
+    <title>Vehicle & Fleet Management System | Stanly Philip</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #263449;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #10243e;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #10243e, #176b87);
+            color: white;
+            padding: 75px 8%;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 720px;
+            font-size: 17px;
+            color: #e2edf5;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 7px 15px;
+            border: 1px solid #9bc8dc;
+            border-radius: 30px;
+            font-size: 13px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: auto;
+            padding: 45px 20px;
+        }
+
+        section {
+            background: white;
+            padding: 28px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #102f50;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: #f0f5fa;
+            padding: 18px;
+            border-radius: 9px;
+        }
+
+        .feature h3 {
+            color: #176b87;
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+
+        .technology {
+            display: inline-block;
+            background: #e5f1f7;
+            color: #164d69;
+            padding: 7px 13px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #176b87;
+            color: white;
+            text-decoration: none;
+            padding: 12px 19px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .btn.secondary {
+            background: #10243e;
+        }
+
+        li {
+            margin: 8px 0 8px 22px;
+        }
+
+        footer {
+            background: #10243e;
+            color: #dce7f0;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <strong>STANLY PHILIP | PORTFOLIO</strong>
+    <a href="index.html">← Back to Portfolio</a>
+</header>
+
+<div class="hero">
+    <h1>Vehicle & Fleet<br>Management System</h1>
+    <p>
+        A Python-based application designed to support
+        vehicle records management, driver administration,
+        trip monitoring, fuel reporting and maintenance alerts.
+    </p>
+    <span class="tag">Python Project · Version 2.1</span>
+</div>
+
+<main>
+
+    <section>
+        <h2>Project Overview</h2>
+        <p>
+            The Vehicle & Fleet Management System is a
+            menu-driven Python application that uses CSV
+            files to store and manage fleet information.
+            It brings together vehicle records, driver details,
+            trip activities and operational reports in one
+            application.
+        </p>
+        <p>
+            The project demonstrates practical programming,
+            structured data handling, validation and backup
+            management.
+        </p>
+    </section>
+
+    <section>
+        <h2>Key Features</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Vehicle Management</h3>
+                <p>Register, view, edit and delete vehicle records.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Driver Management</h3>
+                <p>Maintain driver information and licence records.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Trip Management</h3>
+                <p>Record, edit, delete and review trip activities.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Maintenance Alerts</h3>
+                <p>Monitor scheduled vehicle services and driver licence expiry dates.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Monthly Reports</h3>
+                <p>Review monthly trip activity, fuel consumption and fuel costs.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Data Backup</h3>
+                <p>Create CSV backups and access the backup restoration function.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+        <span class="technology">Python</span>
+        <span class="technology">CSV</span>
+        <span class="technology">File Handling</span>
+        <span class="technology">Functions</span>
+        <span class="technology">Data Validation</span>
+        <span class="technology">Pydroid 3</span>
+    </section>
+
+    <section>
+        <h2>Project Testing</h2>
+        <p>
+            The application has undergone functional testing
+            covering startup, data initialization, vehicle
+            registration, vehicle editing and deletion,
+            driver registration, trip management, reports
+            and CSV backup creation.
+        </p>
+        <p>
+            Further testing of backup restoration and
+            remaining edge cases is ongoing.
+        </p>
+    </section>
+
+    <section>
+        <h2>Source Code & Project Repository</h2>
+        <p>
+            Explore the Python source code, project
+            documentation and dashboard screenshot on GitHub.
+        </p>
+
+        <div class="buttons">
+            <a class="btn"
+               href="https://github.com/philipkhoswe/vehicle-fleet-management-system"
+               target="_blank" rel="noopener">
+                View Source Code
+            </a>
+
+            <a class="btn secondary"
+               href="https://github.com/philipkhoswe">
+                My GitHub Profile
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Developed by Stanly Philip</p>
+    <p>Python Programming & Practical Software Development</p>
+    <p>© 2026</p>
+</footer>
+
+</body>
+</html>
